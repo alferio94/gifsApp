@@ -1,1 +1,10 @@
-<p>resultados works!</p>
+<div class="row">
+    <div class="col-md-4 col-sm-6 animate__animated animate__backInDown animate__faster" *ngFor="let gif of resultados">
+        <div class="card">
+            <img [src]="gif.images.downsized_medium.url" class="card-img-top" [alt]="gif.title">
+            <div class="card-body">
+                <p class="card-text">{{gif.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>
